@@ -4,14 +4,48 @@
         <meta charset="utf-8">
         <title>Challenge: The overflowing ocean</title>
         <style>
-            .info {
-                background: rgb(219, 235, 255);
+            p {
+                color: rgb(120, 248, 242);
             }
+            .info {
+                background-color: rgb(11, 92, 88);
+            }
+            div {
+                width: 70%;
+                width: 200px;
+                height: 200px;
+                overflow: scroll;
+            }
+            .pic {
+                width: 70%;
+                width: 200px;
+                height: 200px;
+            }
+            .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #9bfce7, 0 0 20px #87f3d8, 0 0 30px #28e4d4, 0 0 40px #16f7bf, 0 0 50px #4dffb5, 0 0 60px #20f19a, 0 0 70px #55d881;
+  }
+  to {
+    text-shadow: 0 0 20px #9bfce7, 0 0 30px #87f3d8, 0 0 40px #28e4d4, 0 0 50px #16f7bf, 0 0 60px #4dffb5, 0 0 70px #20f19a, 0 0 80px #55d881;
+  }
+}
+a {
+    color: rgb(120,248,242);
+}
         </style>
     </head>
     <body>
     
-        <h1>The ocean</h1>
+        <h1 class="glow">the ocean</h1>
         
         <img class="pic" src="https://www.kasandbox.org/programming-images/landscapes/beach-in-hawaii.png" alt="Photo of rocky ocean beach in Hawaii">
         
